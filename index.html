@@ -39,11 +39,17 @@
                 </div>        
             </div>        
         </div>                 
-        <footer class="footer bg-dark text-white-50 py-4">                         
-            <div class="container text-center">                                          
-                <span>&copy; 2020 realfood.earth
-                </span>                           
-            </div>                                   
+        <footer class="footer bg-dark text-white-50 py-2">                         
+            <div class="container-fluid text-center">                                          
+                <div class="row">
+                    <div class="col text-left px-4 pt-2">
+                        <span class="align-bottom">&copy; 2020 realfood.earth</span>
+                    </div>                           
+                    <div class="col text-right px-4">
+                        <button id="contact_us_button" type="button" class="btn btn-outline-light" onclick="EhGrabbers.executeGrabberOnDemand('6393124848926720')">Contact Us</button>
+                    </div>
+                </div>
+            </div>                            
         </footer>                                                      
         <!-- Bootstrap core JavaScript -->               
 <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>                
@@ -65,6 +71,12 @@ $(function(){
       transitionDelay: 3,
       animationSpeed: 1200
   });
+  /*   4gd4oglib5h8oceirq26rtr6cb
+  $("#contact_us_button").click(function(){
+    EhGrabbers.executeGrabberOnDemand('4gd4oglib5h8oceirq26rtr6cb');
+  });
+  */
+  
 });
 // EngageBay js
 var EhAPI = EhAPI || {}; EhAPI.after_load = function(){
