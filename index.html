@@ -10,11 +10,10 @@
         </title>             
         <!-- Bootstrap core CSS -->              
         <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-        <link rel="stylesheet" href="backgroundTransition.css">             
-        <!-- Custom styles for this template    
-                <link href="https://cdn.realfood.earth/public_assets/index.css" rel="stylesheet">-->         
-        <style>        /*.opaque-background {background-color: rgba(255, 255, 255, 0.5);}*/         .opaque-background {background-color: rgba(0, 0, 0, 0.5);}         .footer {           position: absolute;           bottom: 0;           width: 100%;           /* Set the fixed height of the footer here */           height: 60px;           line-height: 60px; /* Vertically center the text there */         }         body, html {             height: 100%;         }         div.background-theme {             background-image: url('https://cdn.realfood.earth/public_assets/produce-3.webp');             /* Full height*/              height: 100%;             /* Center and scale the image nicely */             background-position: center;             background-repeat: no-repeat;             background-size: cover;         }         
-        </style>      
+        <link rel="stylesheet" href="https://cdn.realfood.earth/public_assets/backgroundTransition.min.css">             
+        <link rel="stylesheet" href="https://cdn.realfood.earth/public_assets/index.css">
+        <!-- Custom styles for this template -->    
+        <link rel="stylesheet" href="https://cdn.realfood.earth/public_assets/index.css">
     </head>       
     <body>
       <div class="container-fluid background-theme h-100 backgroundTransition">             
@@ -50,32 +49,34 @@
         
                 
 <!-- Bootstrap core JavaScript -->             
-<script src="https://code.jquery.com/jquery-3.4.1.slim.js"></script>              
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>              
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js" integrity="sha384-6khuMg9gaYr5AxOqhkVIODVIvm9ynTT5J4V1cfthmT+emCG6yVmEZsRHdxlotUnm" crossorigin="anonymous"></script>            
 <!-- Background Image Transition -->
-<script src="backgroundTransition.js"></script>
-$('.backgroundTransition').backgroundTransition({
-    backgrounds: [
-        // at least 2 images
-	    { src: 'https://cdn.realfood.earth/public_assets/produce-3.webp' },
-	    { src: 'https://cdn.realfood.earth/public_assets/produce-1.webp' },
-	    { src: 'https://cdn.realfood.earth/public_assets/produce-2.webp' },
-        { src: 'https://cdn.realfood.earth/public_assets/produce-4.webp' },
-        { src: 'https://cdn.realfood.earth/public_assets/produce-5.webp' },
-        { src: 'https://cdn.realfood.earth/public_assets/produce-6.webp' }
-    ],
-    transitionDelay: 5,
-    animationSpeed: 1200
-});
-<!-- EngageBay js -->                    
+<script src="https://cdn.realfood.earth/public_assets/backgroundTransition.min.js"></script>
 <script>
-  var EhAPI = EhAPI || {}; EhAPI.after_load = function(){
-  EhAPI.set_account('4gd4oglib5h8oceirq26rtr6cb', 'meatmarket');
-  EhAPI.execute('rules');};(function(d,s,f) {
-  var sc=document.createElement(s);sc.type='text/javascript';
-  sc.async=true;sc.src=f;var m=document.getElementsByTagName(s)[0];
-  m.parentNode.insertBefore(sc,m);   
-  })(document, 'script', '//d2p078bqz5urf7.cloudfront.net/jsapi/ehform.js'); 
+$(function(){
+  $('.backgroundTransition').backgroundTransition({
+      backgrounds: [
+          // at least 2 images
+  	    { src: 'https://cdn.realfood.earth/public_assets/produce-1.webp' },
+  	    { src: 'https://cdn.realfood.earth/public_assets/produce-2.webp' },
+        { src: 'https://cdn.realfood.earth/public_assets/produce-3.webp' },
+          { src: 'https://cdn.realfood.earth/public_assets/produce-4.webp' },
+          { src: 'https://cdn.realfood.earth/public_assets/produce-5.webp' },
+          { src: 'https://cdn.realfood.earth/public_assets/produce-6.webp' }
+      ],
+      transitionDelay: 3,
+      animationSpeed: 1200
+  });
+});
+// EngageBay js
+var EhAPI = EhAPI || {}; EhAPI.after_load = function(){
+EhAPI.set_account('4gd4oglib5h8oceirq26rtr6cb', 'meatmarket');
+EhAPI.execute('rules');};(function(d,s,f) {
+var sc=document.createElement(s);sc.type='text/javascript';
+sc.async=true;sc.src=f;var m=document.getElementsByTagName(s)[0];
+m.parentNode.insertBefore(sc,m);   
+})(document, 'script', '//d2p078bqz5urf7.cloudfront.net/jsapi/ehform.js'); 
 </script>       
     </body>
 </html>
